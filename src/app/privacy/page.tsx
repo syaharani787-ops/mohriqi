@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import { Shield, Eye, Database, UserRights, Cookie, Lock } from 'lucide-react'
+import { Shield, Eye, Database, Users, Cookie, Lock } from 'lucide-react'
 import Link from 'next/link'
 
 export default function PrivacyPolicy() {
@@ -175,7 +175,7 @@ export default function PrivacyPolicy() {
             <Card className="mb-8">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-2xl">
-                  <UserRights className="w-8 h-8 text-orange-600" />
+                  <Users className="w-8 h-8 text-orange-600" />
                   Hak Anda sebagai Pengguna
                 </CardTitle>
               </CardHeader>
