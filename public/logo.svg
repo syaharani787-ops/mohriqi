@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<defs>
+  <style type="text/css">
+    .coffee-cup{fill:#FB923C;stroke:#EA580C;stroke-width:2;stroke-miterlimit:10;}
+    .coffee-steam{fill:#FED7AA;opacity:0.8;}
+    .logo-text{fill:#EA580C;font-family:Arial, sans-serif;font-weight:bold;}
+    .logo-bg{fill:#FFF7ED;stroke:#EA580C;stroke-width:3;stroke-miterlimit:10;}
+    
+    .steam-animation {
+      animation: steam 3s ease-in-out infinite;
+    }
+    
+    @keyframes steam {
+      0%, 100% { opacity: 0.3; transform: translateY(0px); }
+      50% { opacity: 0.8; transform: translateY(-5px); }
+    }
+  </style>
+</defs>
+
+<!-- Background Circle -->
+<circle class="logo-bg" cx="100" cy="100" r="95"/>
+
+<!-- Coffee Cup -->
+<g transform="translate(100, 80)">
+  <!-- Cup Body -->
+  <path class="coffee-cup" d="M-30,0 L-25,35 L25,35 L30,0 Z"/>
+  <!-- Cup Handle -->
+  <path class="coffee-cup" d="M30,8 C40,8 45,15 45,22 C45,29 40,36 30,36"/>
+  <!-- Saucer -->
+  <ellipse class="coffee-cup" cx="0" cy="38" rx="35" ry="8"/>
+  
+  <!-- Coffee Liquid -->
+  <path d="M-26,8 L-23,30 L23,30 L26,8 Z" fill="#92400E" opacity="0.8"/>
+  
+  <!-- Steam -->
+  <g class="steam-animation">
+    <path class="coffee-steam" d="M-10,-5 Q-12,-15 -8,-25 Q-4,-35 -6,-45"/>
+    <path class="coffee-steam" d="M0,-5 Q2,-15 -2,-25 Q-6,-35 -4,-45"/>
+    <path class="coffee-steam" d="M10,-5 Q12,-15 8,-25 Q4,-35 6,-45"/>
+  </g>
+</g>
+
+<!-- Company Name -->
+<text x="100" y="140" class="logo-text" font-size="16" text-anchor="middle">MOH RIQI</text>
+<text x="100" y="158" class="logo-text" font-size="16" text-anchor="middle">FAUZI</text>
+
+<!-- Decorative Elements -->
+<circle cx="40" cy="40" r="3" fill="#FB923C" opacity="0.6"/>
+<circle cx="160" cy="40" r="3" fill="#FB923C" opacity="0.6"/>
+<circle cx="40" cy="160" r="3" fill="#FB923C" opacity="0.6"/>
+<circle cx="160" cy="160" r="3" fill="#FB923C" opacity="0.6"/>
+</svg>
